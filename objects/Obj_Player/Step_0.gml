@@ -49,4 +49,6 @@ if(hp < maxhp) // Regen is faster depending on amount of health
 	
 }
 
+if(hp > maxhp) { hp = maxhp};
+
 if(hp <= 0) { room_restart() };
