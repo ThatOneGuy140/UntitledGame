@@ -1,5 +1,6 @@
 
-// Declaring Variables
+#region Variable Assignment
+
 hsp = 0;
 vsp = 0;
 grv = 0.4
@@ -16,6 +17,12 @@ currentweapon = "None";
 magcap1911 = 7;
 magcapmp5 = 30;
 magcapm16 = 30;
+
+mag1911 = magcap1911;
+firetimer1911 = 0;
+reloadtimer1911 = 0;
+
+#endregion
 
 switch (voice) // Voice assignment
 {

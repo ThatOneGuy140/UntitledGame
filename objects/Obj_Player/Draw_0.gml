@@ -5,3 +5,4 @@ if(hp < maxhp){
 
 draw_text(x+30,y-5,hp);
 draw_text(x+30,y-20,currentweapon);
+draw_text(x+65,y-5,mag1911);
