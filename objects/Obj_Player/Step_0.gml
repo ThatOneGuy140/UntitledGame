@@ -25,7 +25,7 @@ y += vsp;
 
 //Health System
 
-if(debug && hp > 0) {hp -= 5}; 
+if(debug && hp > 0) {hp -= 2}; 
 hppercent = hp / maxhp * 100  //See "Draw" event
 
 if(hp < maxhp) // Regen is faster depending on amount of health
@@ -49,3 +49,4 @@ if(hp < maxhp) // Regen is faster depending on amount of health
 	
 }
 
+if(hp <= 0) { room_restart() };
