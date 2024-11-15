@@ -11,6 +11,11 @@ healthmult = 1;
 regenrate = 0.1
 voice = "mVoice1";
 
+//Weapon mag capacity
+magcap1911 = 7;
+magcapmp5 = 30;
+magcapm16 = 30;
+
 switch (voice) // Voice assignment
 {
 	case "mVoice1":
@@ -34,3 +39,4 @@ switch (voice) // Voice assignment
 	break;
 	
 }
+
