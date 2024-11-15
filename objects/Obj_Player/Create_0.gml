@@ -12,6 +12,7 @@ regenrate = 0.1
 voice = "mVoice1";
 
 //Weapon mag capacity
+currentweapon = "None";
 magcap1911 = 7;
 magcapmp5 = 30;
 magcapm16 = 30;
