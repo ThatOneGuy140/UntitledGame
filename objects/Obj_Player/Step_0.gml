@@ -1,14 +1,12 @@
 #region TImers
-firetimer1911--;
-reloadtimer1911++;
 
 #endregion
 
 // Pee is stored in the balls
 
 #region Keyboard Input
-var moveleft = keyboard_check(ord("A"));
-var moveright = keyboard_check(ord("D"));
+var moveleft = keyboard_check(ord("A")) || keyboard_check(vk_left);
+var moveright = keyboard_check(ord("D")) || keyboard_check(vk_right);
 var jump = keyboard_check(vk_space);
 var debug  = keyboard_check(vk_shift);
 var itemselect1 = keyboard_check(ord("1"));
@@ -76,44 +74,5 @@ if(itemselect1){ currentweapon = "1911"};
 if(itemselect2){ currentweapon = "MP5"};
 if(itemselect3){ currentweapon = "M16"};
 
-//Using weapons
-
-if (attackkey)
-{
-	switch(currentweapon)
-	{
-		
-		case "1911":
-			if(mag1911 > 0 && firetimer1911 <= 0 && reloadtimer1911 > 120){
-				mag1911 -= 1
-				firetimer1911 = 15;
-			}
-		break
-		
-		case "M16":
-		{
-				if(magm16 > 0 && firetimerm16 <= 0 && reloadtimerm16 > 320
-	}
-}
-
-if(reloadkey)
-{
-	switch(currentweapon)
-	{
-		case "1911":
-			if(reloadtimer1911 > 60)
-			{
-				mag1911 = magcap1911;
-				reloadtimer1911 = 0;
-			}
-		break;
-		
-		case "M16":
-			
-		break;
-		
-	}
-	
-}
 
 #endregion
