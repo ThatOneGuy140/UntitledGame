@@ -12,7 +12,7 @@ var debug  = keyboard_check(vk_shift);
 var itemselect1 = keyboard_check(ord("1"));
 var itemselect2 = keyboard_check(ord("2"));
 var itemselect3 = keyboard_check(ord("3"));
-var attackkey = keyboard_check(ord("E"));
+var attackkey = keyboard_check(ord("E")) || mouse_check_button(1);
 var reloadkey = keyboard_check(ord("R"));
 #endregion
 
