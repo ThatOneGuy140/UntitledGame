@@ -2,10 +2,17 @@
   "$GMSprite":"",
   "%Name":"Spr_M16",
   "bboxMode":0,
+<<<<<<< HEAD
   "bbox_bottom":75,
   "bbox_left":34,
   "bbox_right":105,
   "bbox_top":50,
+=======
+  "bbox_bottom":46,
+  "bbox_left":20,
+  "bbox_right":75,
+  "bbox_top":27,
+>>>>>>> origin/main
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -16,14 +23,22 @@
   ],
   "gridX":0,
   "gridY":0,
+<<<<<<< HEAD
   "height":128,
+=======
+  "height":100,
+>>>>>>> origin/main
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"bea8da0a-ae81-4c06-9de2-9d22650c8eaf","blendMode":0,"displayName":"default","isLocked":false,"name":"bea8da0a-ae81-4c06-9de2-9d22650c8eaf","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Spr_M16",
   "nineSlice":null,
+<<<<<<< HEAD
   "origin":9,
+=======
+  "origin":0,
+>>>>>>> origin/main
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -75,8 +90,13 @@
     ],
     "visibleRange":null,
     "volume":1.0,
+<<<<<<< HEAD
     "xorigin":60,
     "yorigin":66,
+=======
+    "xorigin":0,
+    "yorigin":0,
+>>>>>>> origin/main
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -86,5 +106,9 @@
   },
   "type":0,
   "VTile":false,
+<<<<<<< HEAD
   "width":128,
+=======
+  "width":100,
+>>>>>>> origin/main
 }
