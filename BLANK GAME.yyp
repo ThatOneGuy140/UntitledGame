@@ -40,7 +40,6 @@
     {"id":{"name":"Obj_weapon","path":"objects/Obj_weapon/Obj_weapon.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Spr_1911","path":"sprites/Spr_1911/Spr_1911.yy",},},
-    {"id":{"name":"Spr_M16","path":"sprites/Spr_M16/Spr_M16.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"Spr_wall","path":"sprites/Spr_wall/Spr_wall.yy",},},
   ],
