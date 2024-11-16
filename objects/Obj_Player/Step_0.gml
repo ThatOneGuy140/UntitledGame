@@ -5,15 +5,15 @@
 // Pee is stored in the balls
 
 #region Keyboard Input
-var moveleft = keyboard_check(ord("A")) || keyboard_check(vk_left);
-var moveright = keyboard_check(ord("D")) || keyboard_check(vk_right);
-var jump = keyboard_check(vk_space);
-var debug  = keyboard_check(vk_shift);
-var itemselect1 = keyboard_check(ord("1"));
-var itemselect2 = keyboard_check(ord("2"));
-var itemselect3 = keyboard_check(ord("3"));
-var attackkey = keyboard_check(ord("E")) || mouse_check_button(1);
-var reloadkey = keyboard_check(ord("R"));
+moveleft = keyboard_check(ord("A")) || keyboard_check(vk_left);
+moveright = keyboard_check(ord("D")) || keyboard_check(vk_right);
+jump = keyboard_check(vk_space);
+debug  = keyboard_check(vk_shift);
+itemselect1 = keyboard_check(ord("1"));
+itemselect2 = keyboard_check(ord("2"));
+itemselect3 = keyboard_check(ord("3"));
+attackkey = keyboard_check(ord("E")) || mouse_check_button(1);
+reloadkey = keyboard_check(ord("R"));
 #endregion
 
 #region Movement

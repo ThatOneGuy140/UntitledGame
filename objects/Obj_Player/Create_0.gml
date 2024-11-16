@@ -12,6 +12,9 @@ healthmult = 1;
 regenrate = 0.1
 voice = "mVoice1";
 
+m16magcap = 30;
+m16mag = m16magcap
+
 //Weapon mag capacity
 currentweapon = "None";
 
