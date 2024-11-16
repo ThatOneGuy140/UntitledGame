@@ -5,8 +5,8 @@
 // Pee is stored in the balls
 
 #region Keyboard Input
-var moveleft = keyboard_check(ord("A"));
-var moveright = keyboard_check(ord("D"));
+var moveleft = keyboard_check(ord("A")) || keyboard_check(vk_left);
+var moveright = keyboard_check(ord("D")) || keyboard_check(vk_right);
 var jump = keyboard_check(vk_space);
 var debug  = keyboard_check(vk_shift);
 var itemselect1 = keyboard_check(ord("1"));
