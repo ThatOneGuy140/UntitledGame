@@ -19,7 +19,7 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 				type = "1911" // Weapon type
 				damage = 5;
 				speed = 20;
-				direction = other.image_angle;
+				direction = other.image_angle + random_range(1,3);
 				image_angle = direction;
 			}
 			firetimer = 15;
@@ -30,6 +30,7 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 		{
 			Obj_Player.mag1911 = Obj_Player.mag1911cap;
 			reloadtimer = 50;
+			with(instance_create_layer(x,y,"Instances",Object_emptymag)) {sprite_index = Spr_M16mag };
 		}
 	
 		sprite_index = Spr_1911;
