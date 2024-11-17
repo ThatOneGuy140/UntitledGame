@@ -56,6 +56,7 @@
     {"id":{"name":"Spr_FloorTileTopRight","path":"sprites/Spr_FloorTileTopRight/Spr_FloorTileTopRight.yy",},},
     {"id":{"name":"Spr_M16","path":"sprites/Spr_M16/Spr_M16.yy",},},
     {"id":{"name":"Spr_M16firing","path":"sprites/Spr_M16firing/Spr_M16firing.yy",},},
+    {"id":{"name":"Spr_M16reload","path":"sprites/Spr_M16reload/Spr_M16reload.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"Spr_wall","path":"sprites/Spr_wall/Spr_wall.yy",},},
     {"id":{"name":"Sprite19","path":"sprites/Sprite19/Sprite19.yy",},},

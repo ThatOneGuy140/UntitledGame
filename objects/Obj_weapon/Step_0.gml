@@ -20,8 +20,9 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 		else if(Obj_Player.reloadkey && reloadtimer <= 0) //Reloading
 		{
 			Obj_Player.m16mag = Obj_Player.m16magcap; //Godamnit I should have assigned these variables to the gun object, too late
-			reloadtimer = 120
+			reloadtimer = 110;
 		}
+		else if(reloadtimer > 0) {sprite_index = Spr_M16reload;}
 		else{sprite_index = Spr_M16};
 	break;
 }
