@@ -7,9 +7,11 @@ y = Obj_Player.y;
 
 switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont feel like using multiple switch statements in the same script.
 {
+	#region 1911
 	case "1911":
 		sprite_index = Spr_1911;
 	break;
+	#endregion
 	 
 	 #region M16
 	case "M16":
@@ -35,6 +37,7 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 		{
 			Obj_Player.m16mag = Obj_Player.m16magcap; //Godamnit I should have assigned these variables to the gun object, too late
 			reloadtimer = 110;
+			with(instance_create_layer(x,y,"Instances",Object_emptymag)) { sprite_index = Spr_M16mag; image_angle = other.image_angle; }
 		}
 		
 		else if(reloadtimer > 0) {sprite_index = Spr_M16reload;} // Checking if the player is reloading and setting the sprite accordingly
