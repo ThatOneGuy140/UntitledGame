@@ -44,6 +44,9 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 	#endregion
 }
 
+if(image_angle > 90 && image_angle < 270) {image_yscale = -1;} //Making the gun face the right direction
+else { image_yscale = 1; }
+
 x = x - lengthdir_x(recoil,image_angle);
 y = y - lengthdir_y(recoil,image_angle); 
 

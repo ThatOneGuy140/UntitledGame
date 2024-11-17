@@ -1,9 +1,9 @@
 {
   "$GMSprite":"",
   "%Name":"Spr_Bullet",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":37,
-  "bbox_left":15,
+  "bbox_left":39,
   "bbox_right":50,
   "bbox_top":35,
   "collisionKind":1,
