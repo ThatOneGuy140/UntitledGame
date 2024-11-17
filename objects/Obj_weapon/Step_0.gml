@@ -30,7 +30,7 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 		{
 			Obj_Player.mag1911 = Obj_Player.mag1911cap;
 			reloadtimer = 50;
-			with(instance_create_layer(x,y,"Instances",Object_emptymag)) {sprite_index = Spr_M16mag };
+			with(instance_create_layer(x,y,"Randomshit",Object_emptymag)) {sprite_index = Spr_M16mag };
 		}
 	
 		sprite_index = Spr_1911;
@@ -63,7 +63,7 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 		{
 			Obj_Player.m16mag = Obj_Player.m16magcap; //Godamnit I should have assigned these variables to the gun object, too late
 			reloadtimer = 110;
-			with(instance_create_layer(x,y,"Instances",Object_emptymag)) { sprite_index = Spr_M16mag; image_angle = other.image_angle; }
+			with(instance_create_layer(x,y,"Randomshit",Object_emptymag)) { sprite_index = Spr_M16mag; image_angle = other.image_angle; }
 		}
 		
 		else if(reloadtimer > 0) {sprite_index = Spr_M16reload;} // Checking if the player is reloading and setting the sprite accordingly
