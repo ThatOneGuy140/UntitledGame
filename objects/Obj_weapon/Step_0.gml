@@ -9,6 +9,23 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 {
 	#region 1911
 	case "1911":
+		
+		if(Obj_Player.attackkey && Obj_Player.mag1911 > 0 && reloadtimer <= 0 && firetimer <= 0) //FIring
+		{
+			Obj_Player.mag1911 = Obj_Player.mag1911 - 1;
+			with(instance_create_layer(x,y,"Instances",Object_bullet)) //FIring bullet
+			{
+				shooter = Obj_Player; // Declares who shot the bullet
+				type = "1911" // Weapon type
+				damage = 5;
+				speed = 20;
+				direction = other.image_angle;
+				image_angle = direction;
+			}
+			firetimer = 15;
+		}
+	
+	
 		sprite_index = Spr_1911;
 	break;
 	#endregion
@@ -23,6 +40,8 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 			
 			with (instance_create_layer(x,y,"Instances",Object_bullet)) { //Creating bullet
 				shooter = Obj_Player;
+				type = "M16";
+				damage = 20;
 				speed = 25; // Moves at 25 pixels a second
 				direction = other.image_angle + random_range(1,5); // Sets direction to the angle of the gun
 				image_angle = direction; // Sets bullet angle to gun angle
