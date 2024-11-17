@@ -23,8 +23,14 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 				image_angle = direction;
 			}
 			firetimer = 15;
+			recoil = 4
 		}
-	
+		
+		if(Obj_Player.reloadkey && reloadtimer <= 0) //Reloading
+		{
+			Obj_Player.mag1911 = Obj_Player.mag1911cap;
+			reloadtimer = 50;
+		}
 	
 		sprite_index = Spr_1911;
 	break;
