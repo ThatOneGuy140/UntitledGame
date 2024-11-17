@@ -43,6 +43,7 @@
     {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},},
     {"id":{"name":"Obj_wall","path":"objects/Obj_wall/Obj_wall.yy",},},
     {"id":{"name":"Obj_weapon","path":"objects/Obj_weapon/Obj_weapon.yy",},},
+    {"id":{"name":"Object_bullet","path":"objects/Object_bullet/Object_bullet.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Spr_1911","path":"sprites/Spr_1911/Spr_1911.yy",},},
     {"id":{"name":"Spr_Bullet","path":"sprites/Spr_Bullet/Spr_Bullet.yy",},},
