@@ -1,5 +1,6 @@
 firetimer--;
 reloadtimer--;
+if(recoil > 0) {recoil--};
 
 x = Obj_Player.x;
 y = Obj_Player.y;
@@ -16,12 +17,13 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 			{
 			Obj_Player.m16mag = Obj_Player.m16mag - 1; //Removes one bullet from mag
 			sprite_index = Spr_M16firing; // Changes to firing sprite
+			recoil = 5;
 			
 			with (instance_create_layer(x,y,"Instances",Object_bullet)) { //Creating bullet
 				shooter = Obj_Player;
 				speed = 25; // Moves at 25 pixels a second
-				direction = other.image_angle; // Sets direction to the angle of the gun
-				image_angle = other.image_angle; // Sets bullet angle to gun angle
+				direction = other.image_angle + random_range(1,5); // Sets direction to the angle of the gun
+				image_angle = direction; // Sets bullet angle to gun angle
 			}
 			
 			firetimer = 5; // 5 frame delay for firing
@@ -41,5 +43,8 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 	break;
 	#endregion
 }
+
+x = x - lengthdir_x(recoil,image_angle);
+y = y - lengthdir_y(recoil,image_angle); 
 
 image_angle = point_direction(x,y,mouse_x,mouse_y);
