@@ -48,6 +48,7 @@
     {"id":{"name":"Object_emptymag","path":"objects/Object_emptymag/Object_emptymag.yy",},},
     {"id":{"name":"Object_objective","path":"objects/Object_objective/Object_objective.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"Spr_1911","path":"sprites/Spr_1911/Spr_1911.yy",},},
     {"id":{"name":"Spr_Bullet","path":"sprites/Spr_Bullet/Spr_Bullet.yy",},},
     {"id":{"name":"Spr_connectortile","path":"sprites/Spr_connectortile/Spr_connectortile.yy",},},
@@ -79,6 +80,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
