@@ -48,7 +48,7 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 			with (instance_create_layer(x,y,"Instances",Object_bullet)) { //Creating bullet
 				shooter = Obj_Player;
 				type = "M16";
-				damage = 20;
+				damage = 10;
 				speed = 25; // Moves at 25 pixels a second
 				direction = other.image_angle + random_range(1,5); // Sets direction to the angle of the gun
 				image_angle = direction; // Sets bullet angle to gun angle
