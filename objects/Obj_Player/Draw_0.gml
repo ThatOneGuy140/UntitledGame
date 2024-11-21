@@ -4,3 +4,4 @@ if(hp < maxhp){
 }
 
 draw_text(x+30,y-5,hp);
+draw_text(x+30,y-25,hittimer);

@@ -1,5 +1,5 @@
 #region TImers
-
+hittimer--;
 #endregion
 
 // Pee is stored in the balls
@@ -38,10 +38,13 @@ y += vsp;
 #endregion
 
 #region Health System
+
+lasthp = hp;
+
 if(debug && hp > 0) {hp -= 2}; 
 hppercent = hp / maxhp * 100  //See "Draw" event
 
-if(hp < maxhp) // Regen is faster depending on amount of health
+if(hp < maxhp && hittimer <= 0) // Regen is faster depending on amount of health
 {
 	
 	if(hp < maxhp / 4){

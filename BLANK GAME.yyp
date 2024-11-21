@@ -47,6 +47,7 @@
     {"id":{"name":"Object_camera","path":"objects/Object_camera/Object_camera.yy",},},
     {"id":{"name":"Object_emptymag","path":"objects/Object_emptymag/Object_emptymag.yy",},},
     {"id":{"name":"Object_enemy","path":"objects/Object_enemy/Object_enemy.yy",},},
+    {"id":{"name":"Object_mine","path":"objects/Object_mine/Object_mine.yy",},},
     {"id":{"name":"Object_objective","path":"objects/Object_objective/Object_objective.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
