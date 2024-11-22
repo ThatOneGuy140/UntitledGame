@@ -48,12 +48,20 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 				shooter = Obj_Player;
 				type = "MP5";
 				damage = 5;
-				speed = 20;
-				direction = other.image_angle;
+				speed = 23;
+				direction = other.image_angle + random_range(1,7);
 				image_angle = direction;
 			}
 			firetimer = 3;
 		}
+		
+		if(Obj_Player.reloadkey && reloadtimer <= 0)
+		{
+			Obj_Player.mp5mag = Obj_Player.mp5magcap;
+			reloadtimer = 90;
+			with(instance_create_layer(x,y,"Instances",Object_emptymag)) { sprite_index = Spr_M16mag };
+		}
+		
 	#endregion
 	 
 	 #region M16
