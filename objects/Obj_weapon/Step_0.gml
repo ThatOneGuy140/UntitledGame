@@ -1,6 +1,9 @@
+
+#region Timers
 firetimer--;
 reloadtimer--;
 if(recoil > 0) {recoil--};
+#endregion
 
 x = Obj_Player.x;
 y = Obj_Player.y;
@@ -19,18 +22,18 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 				type = "1911" // Weapon type
 				damage = 15;
 				speed = 20;
-				direction = other.image_angle + random_range(1,3);
+				direction = other.image_angle + random_range(1,3); // Random spread of 3 pixels
 				image_angle = direction;
 			}
-			firetimer = 15;
-			recoil = 4
+			firetimer = 15; // 15 frame delay between shots
+			recoil = 4 // 4 Pixel recoil
 		}
 		
 		if(Obj_Player.reloadkey && reloadtimer <= 0) //Reloading
 		{
-			Obj_Player.mag1911 = Obj_Player.mag1911cap;
-			reloadtimer = 50;
-			with(instance_create_layer(x,y,"Randomshit",Object_emptymag)) {sprite_index = Spr_M16mag };
+			Obj_Player.mag1911 = Obj_Player.mag1911cap; // Resetting mag
+			reloadtimer = 50; // 50 frame reload time 
+			with(instance_create_layer(x,y,"Randomshit",Object_emptymag)) {sprite_index = Spr_M16mag }; // Spawns empty mag
 		}
 	
 		sprite_index = Spr_1911;
@@ -45,20 +48,20 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 			recoil = 4;
 			with(instance_create_layer(x,y,"Instances",Object_bullet))
 			{
-				shooter = Obj_Player;
-				type = "MP5";
-				damage = 3;
-				speed = 23;
-				direction = other.image_angle + random_range(1,7);
+				shooter = Obj_Player; // Declaring who shot
+				type = "MP5"; //Somewhat redundant variable
+				damage = 3; // 3 Damage
+				speed = 23; //23 pixel per second speed
+				direction = other.image_angle + random_range(1,7); // High bullet spread of 7 pixels
 				image_angle = direction;
 			}
-			firetimer = 3.5;
+			firetimer = 3.5; // Fast firing rate 3.5 frame delay
 		}
 		
 		if(Obj_Player.reloadkey && reloadtimer <= 0)
 		{
 			Obj_Player.mp5mag = Obj_Player.mp5magcap;
-			reloadtimer = 90;
+			reloadtimer = 90; // 90 frame reload time (A second and a half)
 			with(instance_create_layer(x,y,"Instances",Object_emptymag)) { sprite_index = Spr_M16mag };
 		}
 		
