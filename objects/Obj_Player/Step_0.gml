@@ -62,8 +62,8 @@ if(hp < maxhp && hittimer <= 0) // Regen is faster depending on amount of health
 	if(hp < maxhp) {
 		hp += regenrate;
 	}
-	
 }
+
 
 if(hp > maxhp) { hp = maxhp};
 
