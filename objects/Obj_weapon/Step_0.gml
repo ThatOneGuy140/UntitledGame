@@ -36,6 +36,25 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 		sprite_index = Spr_1911;
 	break;
 	#endregion
+	
+	#region MP5
+	case "MP5":
+		if(Obj_Player.attackkey && firetimer <= 0 && reloadtimer <= 0 && Obj_Player.mp5mag > 0)
+		{
+			Obj_Player.mp5mag = Obj_Player.mp5mag - 1;
+			recoil = 4;
+			with(instance_create_layer(x,y,"Randomshit",Object_bullet))
+			{
+				shooter = Obj_Player;
+				type = "MP5";
+				damage = 5;
+				speed = 20;
+				direction = other.image_angle;
+				image_angle = direction;
+			}
+			firetimer = 3;
+		}
+	#endregion
 	 
 	 #region M16
 	case "M16":

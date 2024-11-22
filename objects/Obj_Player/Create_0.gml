@@ -20,6 +20,9 @@ mag1911 = mag1911cap;
 m16magcap = 30;
 m16mag = m16magcap
 
+mp5magcap = 30;
+mp5mag = mp5magcap;
+
 //Weapon mag capacity
 currentweapon = "None";
 
