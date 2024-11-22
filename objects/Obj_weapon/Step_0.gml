@@ -17,7 +17,7 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 			{
 				shooter = Obj_Player; // Declares who shot the bullet
 				type = "1911" // Weapon type
-				damage = 5;
+				damage = 15;
 				speed = 20;
 				direction = other.image_angle + random_range(1,3);
 				image_angle = direction;
@@ -43,16 +43,16 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 		{
 			Obj_Player.mp5mag = Obj_Player.mp5mag - 1;
 			recoil = 4;
-			with(instance_create_layer(x,y,"Randomshit",Object_bullet))
+			with(instance_create_layer(x,y,"Instances",Object_bullet))
 			{
 				shooter = Obj_Player;
 				type = "MP5";
-				damage = 5;
+				damage = 3;
 				speed = 23;
 				direction = other.image_angle + random_range(1,7);
 				image_angle = direction;
 			}
-			firetimer = 3;
+			firetimer = 3.5;
 		}
 		
 		if(Obj_Player.reloadkey && reloadtimer <= 0)
@@ -70,7 +70,7 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 			{
 			Obj_Player.m16mag = Obj_Player.m16mag - 1; //Removes one bullet from mag
 			sprite_index = Spr_M16firing; // Changes to firing sprite
-			recoil = 5;
+			recoil = 7;
 			
 			with (instance_create_layer(x,y,"Instances",Object_bullet)) { //Creating bullet
 				shooter = Obj_Player;
