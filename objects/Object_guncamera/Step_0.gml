@@ -12,3 +12,6 @@ if(distance_to_object(Obj_Player) < distancevisiblex && firetimer <= 0)
 		image_angle = direction;
 	}
 }
+
+if(firetimer > 0) { sprite_index = Spr_guncamerafiring }
+else { sprite_index = Spr_guncameraidle }
