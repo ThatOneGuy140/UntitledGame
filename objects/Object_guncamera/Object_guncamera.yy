@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_Brown",
-    "path":"sprites/Spr_Brown/Spr_Brown.yy",
+    "name":"Spr_guncameraidle",
+    "path":"sprites/Spr_guncameraidle/Spr_guncameraidle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
