@@ -1,2 +1,2 @@
-distancevisiblex = 256;
+distancevisiblex = 315;
 firetimer = 0;
