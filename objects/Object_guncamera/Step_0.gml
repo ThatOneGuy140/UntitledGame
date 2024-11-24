@@ -1,5 +1,6 @@
 firetimer--;
 
+hppercent = hp / maxhp * 100
 if(hp <= 0) {destroyed = true }
 
 if(distance_to_object(Obj_Player) < distancevisiblex && firetimer <= 0 && destroyed == false)
