@@ -5,6 +5,7 @@ maxhp = 75;
 minhp = 0;
 hp = maxhp;
 
+jumpdelay = 0;
 movespd = 3
 vsp = 0;
 hsp = 0;
