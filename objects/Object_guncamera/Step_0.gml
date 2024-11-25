@@ -11,7 +11,7 @@ if(distance_to_object(Obj_Player) < distancevisiblex && firetimer <= 0 && destro
 		shooter = Object_guncamera;
 		speed = 25;
 		damage = 10;
-		direction = other.image_angle;
+		direction = other.image_angle + random_range(1,3);
 		image_angle = direction;
 	}
 }

@@ -35,7 +35,7 @@ if(path_exists(path))
 		vsp = 0; 
 		if(nexty < y && jumpdelay <= 0) {
 			vsp = -10;  //Jumping if needed
-			jumpdelay = 60;
+			jumpdelay = 120;
 		}
 	}
 	

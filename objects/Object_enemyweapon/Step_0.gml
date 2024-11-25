@@ -17,7 +17,7 @@ if(distance_to_object(target) <= 1024) // If the target (Player) is within 1024 
 			shooter = Object_enemy;
 			speed = 25;
 			damage = 5;
-			direction = other.image_angle;
+			direction = other.image_angle + random_range(1,5);
 			image_angle = direction;
 		}
 		sprite_index = Spr_M16firing;
@@ -26,5 +26,9 @@ if(distance_to_object(target) <= 1024) // If the target (Player) is within 1024 
 	}
 	
 	if(mag <= 0) {reloadtimer = 120; mag = magcap; sprite_index = Spr_M16reload;}
+	if(reloadtimer = 120)
+	{
+		with(instance_create_layer(x,y,"Randomshit",Object_emptymag)) { sprite_index = Spr_M16mag; image_angle = other.image_angle }
+	}
 	
 }
