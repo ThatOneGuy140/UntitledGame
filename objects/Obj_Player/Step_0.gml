@@ -44,24 +44,9 @@ lasthp = hp;
 if(debug && hp > 0) {hp -= 2}; 
 hppercent = hp / maxhp * 100  //See "Draw" event
 
-if(hp < maxhp && hittimer <= 0) // Regen is faster depending on amount of health
+if(hp < maxhp && hittimer <= 0)
 {
-	
-	if(hp < maxhp / 4){
-		hp += regenrate * 2;
-	}
-	
-	if(hp < maxhp / 3){
-		hp += regenrate * 1.5;
-	}
-	
-	if(hp < maxhp / 2){
-		hp += regenrate * 1.25;
-	}
-	
-	if(hp < maxhp) {
-		hp += regenrate;
-	}
+	hp += regenrate *2;
 }
 
 
