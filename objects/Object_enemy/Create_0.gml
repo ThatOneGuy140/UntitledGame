@@ -4,6 +4,7 @@ alive = true;
 maxhp = 75;
 minhp = 0;
 hp = maxhp;
+weapon = "none";
 
 jumpdelay = 0;
 movespd = 3
@@ -11,6 +12,13 @@ vsp = 0;
 hsp = 0;
 grv = 0.4
 #endregion
+
+with(instance_create_layer(x,y,"Randomshit",Object_enemyweapon)) //Creating weapon
+{
+	target = Obj_Player;
+	owner = other
+	other.weapon = self;
+}
 
 //Making a grid for the enemy to follow (Pathfinding)
 

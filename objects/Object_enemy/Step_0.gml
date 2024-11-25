@@ -71,4 +71,4 @@ if(path_exists(path))
 
 hppercent = hp / maxhp * 100 
 
-if(hp <= minhp) {instance_destroy(self)}
+if(hp <= minhp) {instance_destroy(self); instance_destroy(weapon);}  //Destroying self and assigned weapon once hp <= 0

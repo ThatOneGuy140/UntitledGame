@@ -49,6 +49,7 @@
     {"id":{"name":"Object_camera","path":"objects/Object_camera/Object_camera.yy",},},
     {"id":{"name":"Object_emptymag","path":"objects/Object_emptymag/Object_emptymag.yy",},},
     {"id":{"name":"Object_enemy","path":"objects/Object_enemy/Object_enemy.yy",},},
+    {"id":{"name":"Object_enemyweapon","path":"objects/Object_enemyweapon/Object_enemyweapon.yy",},},
     {"id":{"name":"Object_guncamera","path":"objects/Object_guncamera/Object_guncamera.yy",},},
     {"id":{"name":"Object_mine","path":"objects/Object_mine/Object_mine.yy",},},
     {"id":{"name":"Object_objective","path":"objects/Object_objective/Object_objective.yy",},},
