@@ -5,7 +5,7 @@ reloading = false;
 firetimer = 0;
 reloadtimer = 0;
 recoil = 0;
-defaultweapon = "1911"
+defaultweapon = "M16";
 weapon = defaultweapon;
 
 switch(weapon)
