@@ -1,11 +1,11 @@
-reloadtimer--;
+    reloadtimer--;
 firetimer--;
 if(recoil >= 0) { recoil--; }
 
 x = owner.x; //keeping position synced with objects owner
 y = owner.y;
 
-if(distance_to_object(target) <= 762) // If the target (Player) is within 1024 pixels
+if(distance_to_object(target) <= 1024) // If the target (Player) is within 1024 pixels
 {
 	image_angle = point_direction(x,y,target.x,target.y); //Pointing weapon in direction of player
 	if(image_angle > 90 && image_angle < 270) {image_yscale = -1;} //Making the gun face the right direction
@@ -29,7 +29,6 @@ if(distance_to_object(target) <= 762) // If the target (Player) is within 1024 p
 			firetimer = 15;
 			mag -= 1;
 		}
-	
 		if(mag <= 0) {reloadtimer = 120; mag = magcap; sprite_index = Spr_M16reload;}
 		if(reloadtimer = 120)
 		{

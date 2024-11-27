@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Snd_m16reload",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":2.360227,
+  "name":"Snd_m16reload",
+  "parent":{
+    "name":"M16",
+    "path":"folders/Sounds/Weapons/M16.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Snd_m16reload.wav",
+  "type":0,
+  "volume":0.5,
+}

@@ -85,6 +85,7 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 			}
 			
 			firetimer = 5; // 5 frame delay for firing
+			if(firetimer = 5) {audio_play_sound(Snd_m16fire1,10,false,3) }
 
 			}
 			
@@ -92,6 +93,7 @@ switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont
 		else if(Obj_Player.reloadkey && reloadtimer <= 0) //Reloading
 		{
 			Obj_Player.m16mag = Obj_Player.m16magcap; //Godamnit I should have assigned these variables to the gun object, too late
+			audio_play_sound(Snd_m16reload,10,false,1); //Playing reload sound
 			reloadtimer = 110;
 			with(instance_create_layer(x,y,"Randomshit",Object_emptymag)) { sprite_index = Spr_M16mag; image_angle = other.image_angle; }
 		}
