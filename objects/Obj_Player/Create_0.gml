@@ -12,6 +12,7 @@ healthmult = 1;
 regenrate = 0.1
 hittimer = 0;
 lasthp = 0;
+pausedelay = 0;
 voice = "mVoice1";
 
 mag1911cap = 7;
