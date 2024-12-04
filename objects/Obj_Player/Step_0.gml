@@ -67,7 +67,6 @@ if(itemselect3){ currentweapon = "M16"};
 #endregion
 
 //Pausing
-
 if(pausedelay <= 0 && pausekey)
 {
 	pausedelay = 60;
