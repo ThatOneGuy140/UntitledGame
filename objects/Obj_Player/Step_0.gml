@@ -14,6 +14,7 @@ itemselect2 = keyboard_check(ord("2"));
 itemselect3 = keyboard_check(ord("3"));
 attackkey = keyboard_check(ord("E")) || mouse_check_button(1);
 reloadkey = keyboard_check(ord("R"));
+pausekey = keyboard_check(vk_escape);
 #endregion
 
 #region Movement
@@ -64,3 +65,10 @@ if(itemselect3){ currentweapon = "M16"};
 
 
 #endregion
+
+//Pausing
+
+if(pausedelay <= 0 && pausekey)
+{
+	pausedelay = 60;
+}
