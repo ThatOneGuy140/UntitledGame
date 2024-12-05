@@ -75,14 +75,11 @@
     {"name":"inst_5580CCFA","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_59B12915","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_452E3BFC","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_3CB89AA4","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_3187EEC6","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"GUI","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_3CB89AA4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3CB89AA4","objectId":{"name":"Object_itemgui","path":"objects/Object_itemgui/Object_itemgui.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":576.0,"y":672.0,},
-      ],"layers":[],"name":"GUI","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"GUI","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"GUI","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":34,"SerialiseWidth":128,"TileCompressedData":[
           1,21,-126,22,3,23,28,3,-31,36,2,5,3,-50,36,2,5,3,-39,36,4,5,30,28,30,-31,-2147483648,4,28,30,-2147483648,
           -2147483648,-3,0,-45,-2147483648,2,28,10,-39,-2147483648,4,28,30,28,30,-31,-2147483648,2,28,30,-50,-2147483648,

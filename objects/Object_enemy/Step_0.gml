@@ -71,4 +71,9 @@ if(path_exists(path))
 
 hppercent = hp / maxhp * 100 
 
-if(hp <= minhp) {instance_destroy(self); instance_destroy(weapon);}  //Destroying self and assigned weapon once hp <= 0
+if(hp <= minhp) {
+	Obj_Player.killcount += 1;
+	instance_destroy(self);
+	instance_destroy(weapon);
+	
+	}  //Destroying self and assigned weapon once hp <= 0
