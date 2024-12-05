@@ -6,6 +6,8 @@ if(spawndelay <= 0 && distancecheck){
 	with(instance_create_layer(x,y,"Instances",Object_enemy))
 	{
 		hp = 75;
+		setweapon = true;
+		weapon = "1911";
 	}
 	spawndelay = 600;
 }

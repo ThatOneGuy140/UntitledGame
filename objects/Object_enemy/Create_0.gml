@@ -4,7 +4,10 @@ alive = true;
 maxhp = 75;
 minhp = 0;
 hp = maxhp;
-weapon = "none";
+weaponitem = "none";
+defaultweapon = "M16";
+setweapon = false;
+if(setweapon == false) { weapon = defaultweapon };
 
 jumpdelay = 0;
 movespd = 3
@@ -17,7 +20,8 @@ with(instance_create_layer(x,y,"Randomshit",Object_enemyweapon)) //Creating weap
 {
 	target = Obj_Player;
 	owner = other
-	other.weapon = self;
+	other.weaponitem = self;
+	weapon = other.weapon;
 }
 
 //Making a grid for the enemy to follow (Pathfinding)
