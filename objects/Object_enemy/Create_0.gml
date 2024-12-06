@@ -4,10 +4,13 @@ alive = true;
 maxhp = 75;
 minhp = 0;
 hp = maxhp;
-weaponitem = "none";
-defaultweapon = "M16";
-setweapon = false;
+
+#region Weapon
+weaponitem = "none"; // No weapon entity created yet
+defaultweapon = "M16"; // Default weapon is the M16
+setweapon = false; // Checking if the enemy is spawned with a certain weapon or not
 if(setweapon == false) { weapon = defaultweapon };
+#endregion
 
 jumpdelay = 0;
 movespd = 3
@@ -18,8 +21,8 @@ grv = 0.4
 
 with(instance_create_layer(x,y,"Randomshit",Object_enemyweapon)) //Creating weapon
 {
-	target = Obj_Player;
-	owner = other
+	target = Obj_Player; // Setting the player as the target
+	owner = other;
 	other.weaponitem = self;
 	weapon = other.weapon;
 }
