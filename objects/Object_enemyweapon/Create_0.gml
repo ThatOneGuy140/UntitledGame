@@ -5,8 +5,12 @@ reloading = false;
 firetimer = 0;
 reloadtimer = 0;
 recoil = 0;
+
 defaultweapon = "M16";
-weapon = defaultweapon;
+if(owner == "none") {weapon = defaultweapon;}
+else { weapon = owner.weapon }; 
+
+weaponchecked = false;
 
 switch(weapon)
 {

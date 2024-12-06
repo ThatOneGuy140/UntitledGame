@@ -2,6 +2,25 @@
 firetimer--;
 if(recoil >= 0) { recoil--; }
 
+if(owner == "none") {weapon = defaultweapon;}
+else { weapon = owner.weapon };
+
+while(weaponchecked == false)
+{	
+		switch(weapon)
+	{
+		case "M16":
+			magcap = 30;
+		break;
+	
+		case "1911":
+			magcap = 7;
+		break;
+	}
+	weaponchecked = true;
+	mag = magcap;
+}
+
 x = owner.x; //keeping position synced with objects owner
 y = owner.y;
 
@@ -43,6 +62,7 @@ if(distance_to_object(target) <= 1024) // If the target (Player) is within 1024 
 				firetimer = 20;
 				recoil = 4;
 				mag -= 1;
+				sprite_index = Spr_1911; //CHANGE THIS LATER
 				with(instance_create_layer(x,y,"Instances",Object_bullet))
 				{
 					speed = 20;

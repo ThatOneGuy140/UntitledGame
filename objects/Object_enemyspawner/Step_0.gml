@@ -1,11 +1,11 @@
 spawndelay--;
 
-distancecheck = distance_to_object(Object_enemy) > 256;
+distancecheck = distance_to_object(Object_enemy) > 1024;
 
 if(spawndelay <= 0 && distancecheck){
 	with(instance_create_layer(x,y,"Instances",Object_enemy))
 	{
-		hp = 75;
+		maxhp = 75;
 		setweapon = true;
 		weapon = "1911";
 	}
