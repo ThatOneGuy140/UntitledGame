@@ -4,6 +4,7 @@ alive = true;
 maxhp = 75;
 minhp = 0;
 hp = maxhp;
+var hppercent;
 
 #region Weapon
 weaponitem = "none"; // No weapon entity created yet

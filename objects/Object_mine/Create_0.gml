@@ -1,2 +1,2 @@
 detonated = false;
-damage = 50;
+damage = 35;

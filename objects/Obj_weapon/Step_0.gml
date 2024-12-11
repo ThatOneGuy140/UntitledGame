@@ -5,7 +5,7 @@ reloadtimer--;
 if(recoil > 0) {recoil--};
 #endregion
 
-x = Obj_Player.x;
+x = Obj_Player.x;  //Syncing with player position
 y = Obj_Player.y;
 
 switch(Obj_Player.currentweapon) // This is probably not optimal code but I dont feel like using multiple switch statements in the same script.

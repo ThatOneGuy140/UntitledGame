@@ -15,6 +15,7 @@ lasthp = 0;
 pausedelay = 0;
 voice = "mVoice1";
 killcount = 0;
+specialevent = false;
 
 mag1911cap = 7;
 mag1911 = mag1911cap;

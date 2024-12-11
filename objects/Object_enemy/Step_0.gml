@@ -66,7 +66,6 @@ if(path_exists(path))
 
 }
 
-
 hppercent = hp / maxhp * 100 
 
 if(hp <= minhp) {

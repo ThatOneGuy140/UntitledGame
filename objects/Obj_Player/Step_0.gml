@@ -32,6 +32,7 @@ vsp += grv;
 //Verticle collision
 if (place_meeting(x,y+vsp,Obj_wall)) { vsp = 0;}
 
+if(specialevent) {move = 0;} // If something like a cutscene is happening, or the player is dead or another event. The player cant move
 
 x += hsp;  //Leave this at the bottom of movement code 
 y += vsp;
