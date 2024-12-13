@@ -21,16 +21,16 @@ pausekey = keyboard_check(vk_escape);
 var move = moveright - moveleft; // Outputs 1, 0 , Or -1 depending on what is being pressed.
 hsp = move * spd; // Applying speed
 //Jumping
-if(place_meeting(x,y+1,Obj_wall &&  jump)) { vsp -= jumpheight};
+if(place_meeting(x,y+1,Obj_wall &&  jump) or place_meeting(x,y+1,Object_playerbarrier) && jump) { vsp -= jumpheight};
 
 //Horizontal collision
-if (place_meeting(x+hsp,y,Obj_wall)) { hsp = 0;}
+if (place_meeting(x+hsp,y,Obj_wall) or place_meeting(x+hsp,y,Object_playerbarrier)) { hsp = 0;}
 
 //Gravity
 vsp += grv;
 
 //Verticle collision
-if (place_meeting(x,y+vsp,Obj_wall)) { vsp = 0;}
+if (place_meeting(x,y+vsp,Obj_wall) or place_meeting(x,y+vsp,Object_playerbarrier)) { vsp = 0;}
 
 if(specialevent) {move = 0;} // If something like a cutscene is happening, or the player is dead or another event. The player cant move
 
